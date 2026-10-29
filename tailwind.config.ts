@@ -5,17 +5,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: "#202923",
-        muted: "#747b74",
-        paper: "#f8f9f6",
-        line: "#e5e8e0",
-        brand: { DEFAULT: "#386847", dark: "#294f35", light: "#edf3e8" },
+        ink: "#18181b",
+        muted: "#71717a",
+        paper: "#fafafa",
+        line: "#e4e4e7",
+        brand: { DEFAULT: "#4f46e5", dark: "#4338ca", light: "#eef2ff" },
       },
       fontFamily: {
-        sans: ["Arial", '"PingFang SC"', '"Microsoft YaHei"', "sans-serif"],
+        sans: ["Inter", "Geist", "-apple-system", "BlinkMacSystemFont", '"Segoe UI"', '"PingFang SC"', '"Microsoft YaHei"', "sans-serif"],
         mono: ['"SFMono-Regular"', "Consolas", "monospace"],
       },
-      boxShadow: { card: "0 5px 24px -14px rgba(32,41,35,.2)" },
     },
   },
   plugins: [],

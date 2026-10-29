@@ -8,7 +8,7 @@ export default function NotFound() {
       <p className="mt-5 text-sm text-muted">
         页面可能已移动，回工具目录继续探索吧。
       </p>
-      <Link href="/" className="button button-green mt-8 text-sm">
+      <Link href="/" className="button button-primary mt-8 text-sm">
         返回首页 <Icon name="right" />
       </Link>
     </div>

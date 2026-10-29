@@ -1,5 +1,20 @@
 import type { CSSProperties } from "react";
 
+const categoryIcons: Record<string, string> = {
+  "llm-apis": "sparkles",
+  payments: "card",
+  auth: "key",
+  hosting: "cloud",
+  databases: "database",
+  email: "mail",
+  analytics: "chart",
+  "seo-distribution": "globe",
+  localization: "languages",
+  design: "layout",
+  legal: "shield",
+  "agent-tools": "terminal",
+};
+
 const paths: Record<string, React.ReactNode> = {
   arrow: <path d="M7 17 17 7M7 7h10v10" />,
   right: <path d="M4 12h16m-6-6 6 6-6 6" />,
@@ -113,13 +128,13 @@ export default function Icon({
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="1.6"
+      strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
       className={`h-5 w-5 shrink-0 ${className}`}
       style={style}
     >
-      {paths[name] || paths.sparkles}
+      {paths[categoryIcons[name] || name] || paths.grid}
     </svg>
   );
 }

@@ -58,31 +58,31 @@ export default async function ToolPage({ params }: Props) {
         <span aria-current="page">{tool.name}</span>
       </nav>
       <div className="grid items-start gap-7 lg:grid-cols-[1fr_300px]">
-        <article className="rounded-2xl border border-line bg-white p-6 sm:p-10">
-          <div className="flex items-center gap-5">
+        <article className="min-w-0 rounded-lg border border-line bg-white p-6 sm:p-10">
+          <div className="flex items-center gap-4 sm:gap-5">
             <ToolLogo tool={tool} large />
-            <div>
+            <div className="min-w-0">
               <Link
                 href={`/category/${category.slug}/`}
                 className="text-[11px] text-brand hover:underline"
               >
                 {category.name}
               </Link>
-              <h1 className="mt-2 text-[29px] font-bold tracking-tight sm:text-4xl">
+              <h1 className="mt-2 break-words text-[25px] font-bold tracking-tight sm:text-4xl">
                 {tool.name}
               </h1>
               <a
                 href={tool.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-2 inline-flex items-center gap-1 text-xs text-muted hover:text-brand"
+                className="mt-2 inline-flex max-w-full items-center gap-1 break-all text-xs text-muted hover:text-brand"
               >
                 {displayDomain(tool.url)}
                 <Icon name="arrow" className="!h-3 !w-3" />
               </a>
             </div>
           </div>
-          <p className="mt-8 max-w-2xl text-base leading-8 text-[#6e7968]">
+          <p className="mt-8 max-w-2xl text-base leading-8 text-muted">
             {tool.description_zh}
           </p>
           <div className="mt-6 flex flex-wrap gap-2">
@@ -104,7 +104,7 @@ export default async function ToolPage({ params }: Props) {
             在搭建 AI 产品时，可以将 {tool.name} 作为「{category.short_name}
             」环节的候选工具。先从官方文档和可用方案开始，结合你的技术栈、目标市场与实际用量选择。
           </p>
-          <div className="mt-8 rounded-xl border border-[#e0e7d5] bg-[#f3f6ed] p-5">
+          <div className="mt-8 rounded-lg border border-line bg-paper p-5">
             <div className="flex items-center gap-2">
               <Icon name="card" className="!h-4 !w-4 text-brand" />
               <h2 className="text-sm font-semibold">费用参考</h2>
@@ -113,13 +113,13 @@ export default async function ToolPage({ params }: Props) {
             <p className="mt-3 text-sm leading-7 text-muted">
               {tool.pricing_hint}
             </p>
-            <p className="mt-2 text-[11px] leading-6 text-[#919987]">
+            <p className="mt-2 text-[11px] leading-6 text-muted">
               标签用于快速筛选，具体价格、地区可用性和商业条款请以官网为准。
             </p>
           </div>
         </article>
         <aside className="space-y-5">
-          <div className="rounded-2xl border border-line bg-white p-6">
+          <div className="rounded-lg border border-line bg-white p-6">
             <h2 className="text-sm font-semibold">加入你的出海工具箱</h2>
             <p className="my-4 text-xs leading-6 text-muted">
               前往官网，了解产品、文档和最新方案。
@@ -128,7 +128,7 @@ export default async function ToolPage({ params }: Props) {
               href={tool.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="button button-green w-full text-xs"
+              className="button button-primary w-full text-xs"
             >
               访问 {tool.name} 官网 <Icon name="arrow" className="!h-4 !w-4" />
             </a>
@@ -165,7 +165,7 @@ export default async function ToolPage({ params }: Props) {
               发现信息有误？告诉我们
             </a>
           </div>
-          <div className="rounded-xl bg-[#edf2e6] p-6">
+          <div className="rounded-lg bg-paper p-6">
             <Icon name="sparkles" className="text-brand" />
             <h2 className="mt-4 text-sm font-semibold">也在做一个好工具？</h2>
             <p className="mt-2 text-xs leading-6 text-muted">
@@ -189,9 +189,9 @@ export default async function ToolPage({ params }: Props) {
             </div>
             <Link
               href={`/category/${category.slug}/`}
-              className="text-xs text-brand"
+              className="inline-flex items-center gap-1 text-xs text-brand"
             >
-              全部同类 ↗
+              全部同类 <Icon name="arrow" className="!h-3 !w-3" />
             </Link>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

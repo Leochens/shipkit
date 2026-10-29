@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import SubmissionForm from "@/components/SubmissionForm";
+import Icon from "@/components/Icon";
 import { contactLink, socialMetadata, siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -55,12 +56,7 @@ export default function SubmitPage() {
             <details key={question} className="group py-5">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-medium">
                 {question}
-                <span
-                  aria-hidden="true"
-                  className="text-lg font-normal text-muted group-open:rotate-45"
-                >
-                  +
-                </span>
+                <Icon name="plus" className="text-muted transition-transform group-open:rotate-45" />
               </summary>
               <p className="mt-4 max-w-2xl text-xs leading-7 text-muted">
                 {answer}
@@ -74,7 +70,7 @@ export default function SubmitPage() {
             href={contactLink("ShipKit 展示合作咨询")}
             className="text-brand underline underline-offset-4"
           >
-            直接邮件聊聊 ↗
+            直接邮件聊聊 <Icon name="arrow" className="inline !h-3 !w-3" />
           </a>
         </p>
       </section>

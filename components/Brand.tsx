@@ -2,12 +2,12 @@ import Link from "next/link";
 export function BrandMark({ className = "" }: { className?: string }) {
   return (
     <span
-      className={`inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-[10px] bg-brand text-white ${className}`}
+      className={`inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-ink text-white ${className}`}
     >
       <svg
         viewBox="0 0 28 28"
         fill="none"
-        className="h-6 w-6"
+        className="h-5 w-5"
         aria-hidden="true"
       >
         <path d="M14 4v13H5.5L14 4Z" fill="currentColor" />
@@ -25,8 +25,8 @@ export default function Brand() {
       className="inline-flex items-center gap-2.5"
     >
       <BrandMark />
-      <span className="text-[23px] font-extrabold tracking-[-1px]">
-        ShipKit<span className="text-brand">.</span>
+      <span className="text-xl font-semibold tracking-[-.8px]">
+        ShipKit<span className="text-zinc-400">.</span>
       </span>
     </Link>
   );

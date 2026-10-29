@@ -47,15 +47,15 @@ export default async function CategoryPage({ params }: Props) {
       <div className="grid gap-10 lg:grid-cols-[214px_minmax(0,1fr)] lg:gap-9">
         <CategorySidebar active={slug} />
         <div className="min-w-0">
-          <section className="mb-9 rounded-2xl border border-[#dfe5d5] bg-[#f0f4e9] p-6 sm:p-9">
-            <div className="mb-5 inline-flex rounded-xl border border-[#dce4d0] bg-white p-3 text-brand">
-              <Icon name={category.icon} className="!h-6 !w-6" />
+          <section className="mb-9 rounded-lg border border-line bg-paper p-6 sm:p-9">
+            <div className="mb-5 inline-flex rounded-lg border border-line bg-white p-3 text-brand">
+              <Icon name={category.slug} className="!h-6 !w-6" />
             </div>
             <p className="section-label !text-[9px]">{category.english}</p>
             <h1 className="text-3xl font-bold tracking-tight">
               {category.name}
             </h1>
-            <p className="mt-4 max-w-xl text-sm leading-7 text-[#78816e]">
+            <p className="mt-4 max-w-xl text-sm leading-7 text-muted">
               {category.description}
             </p>
             <span className="mt-5 inline-block rounded-full bg-white/80 px-3 py-1 font-mono text-[10px] text-brand">
@@ -67,7 +67,7 @@ export default async function CategoryPage({ params }: Props) {
             categories={categories}
             initialCategory={slug}
           />
-          <section className="mt-9 flex flex-col justify-between gap-4 rounded-xl border border-line bg-white p-6 sm:flex-row sm:items-center">
+          <section className="mt-9 flex flex-col justify-between gap-4 rounded-lg border border-line bg-white p-6 sm:flex-row sm:items-center">
             <div>
               <h2 className="text-sm font-semibold">这里还缺一款好工具？</h2>
               <p className="mt-2 text-xs text-muted">

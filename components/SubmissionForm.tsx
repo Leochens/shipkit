@@ -114,14 +114,14 @@ export default function SubmissionForm() {
         {plans.map((item, index) => (
           <article
             key={item.id}
-            className={`relative flex flex-col rounded-2xl border p-6 sm:p-7 ${index === 1 ? "border-[#a9ba94] bg-[#f0f4e8]" : "border-line bg-white"}`}
+            className={`relative flex flex-col rounded-lg border p-6 sm:p-7 ${index === 1 ? "border-zinc-300 bg-paper" : "border-line bg-white"}`}
           >
             {index === 1 && (
-              <span className="absolute right-5 top-[-11px] rounded-full bg-brand px-3 py-1 font-mono text-[9px] tracking-wide text-white">
+              <span className="absolute right-5 top-[-11px] rounded-md bg-ink px-3 py-1 font-mono text-[9px] tracking-wide text-white">
                 MORE VISIBILITY
               </span>
             )}
-            <span className="mb-5 inline-flex h-9 w-9 items-center justify-center rounded-lg border border-[#e0e5d8] bg-white text-brand">
+            <span className="mb-5 inline-flex h-9 w-9 items-center justify-center rounded-lg border border-line bg-white text-brand">
               <Icon
                 name={
                   index === 0 ? "layout" : index === 1 ? "sparkles" : "globe"
@@ -143,7 +143,7 @@ export default function SubmissionForm() {
               {item.features.map((feature) => (
                 <li
                   key={feature}
-                  className="flex items-start gap-2 text-xs leading-6 text-[#7e8774]"
+                  className="flex items-start gap-2 text-xs leading-6 text-muted"
                 >
                   <Icon
                     name="check"
@@ -157,7 +157,7 @@ export default function SubmissionForm() {
               type="button"
               aria-pressed={plan === item.id}
               onClick={() => choosePlan(item.id)}
-              className={`button mt-auto w-full text-xs ${index === 1 ? "button-green" : "button-outline"}`}
+              className={`button mt-auto w-full text-xs ${index === 1 ? "button-primary" : "button-outline"}`}
             >
               {item.label}
               <Icon name="right" className="!h-3.5 !w-3.5" />
@@ -165,7 +165,7 @@ export default function SubmissionForm() {
           </article>
         ))}
       </section>
-      <div className="mt-6 flex flex-col justify-between gap-5 rounded-xl border border-dashed border-[#ced8c0] bg-[#f5f7ef] p-6 sm:flex-row sm:items-center">
+      <div className="mt-6 flex flex-col justify-between gap-5 rounded-lg border border-line bg-paper p-6 sm:flex-row sm:items-center">
         <div>
           <h2 className="text-sm font-semibold">刚起步？免费投稿也欢迎。</h2>
           <p className="mt-2 text-xs leading-6 text-muted">
@@ -185,7 +185,7 @@ export default function SubmissionForm() {
       </div>
       <section
         id="submit-form"
-        className="mt-14 grid scroll-mt-8 gap-8 lg:grid-cols-[.8fr_1.2fr]"
+        className="mt-14 grid scroll-mt-24 gap-8 lg:grid-cols-[.8fr_1.2fr]"
       >
         <div>
           <p className="section-label">LET&apos;S GET YOU LISTED</p>
@@ -229,7 +229,7 @@ export default function SubmissionForm() {
             }
           }}
           noValidate
-          className="rounded-2xl border border-line bg-white p-6 sm:p-8"
+          className="rounded-lg border border-line bg-white p-6 sm:p-8"
         >
           <div className="grid gap-5 sm:grid-cols-2">
             <div>
@@ -372,14 +372,14 @@ export default function SubmissionForm() {
           {error && (
             <p
               role="alert"
-              className="mt-4 rounded-lg bg-red-50 p-3 text-xs leading-6 text-red-700"
+              className="mt-4 rounded-lg bg-paper p-3 text-xs leading-6 text-ink"
             >
               {error}
             </p>
           )}
           <button
             type="submit"
-            className="button button-green mt-6 w-full text-xs"
+            className="button button-primary mt-6 w-full text-xs"
           >
             生成投稿邮件 <Icon name="mail" className="!h-4 !w-4" />
           </button>
@@ -389,7 +389,7 @@ export default function SubmissionForm() {
           {draft && (
             <div
               role="status"
-              className="mt-5 rounded-xl border border-[#dbe5ce] bg-brand-light p-4"
+              className="mt-5 rounded-lg border border-line bg-brand-light p-4"
             >
               <p className="text-sm font-semibold text-brand">
                 邮件草稿已准备好
@@ -400,7 +400,7 @@ export default function SubmissionForm() {
               </p>
               <a
                 href={draft}
-                className="button button-green mt-4 w-full text-xs"
+                className="button button-primary mt-4 w-full text-xs"
               >
                 打开邮件客户端并发送{" "}
                 <Icon name="arrow" className="!h-3.5 !w-3.5" />

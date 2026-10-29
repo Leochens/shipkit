@@ -1,11 +1,33 @@
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync, readdirSync } from "node:fs";
 import assert from "node:assert/strict";
 import path from "node:path";
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+// Inline build variables do not carry over to `&& npm run check:export`.
+// Use the exported deployment URL when no explicit expectations are supplied.
+const home = readFileSync("out/index.html", "utf8");
+const exportedCanonical = home.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
+assert.ok(exportedCanonical, "Homepage is missing its canonical URL");
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ??
+  new URL(exportedCanonical).pathname.replace(/\/+$/, "");
 const siteUrl = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://shipkit.directory"
+  process.env.NEXT_PUBLIC_SITE_URL || exportedCanonical
 ).replace(/\/+$/, "");
+const prohibitedCharacters = /[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{FE0F}]/u;
+function checkCharacters(directory) {
+  for (const entry of readdirSync(directory, { withFileTypes: true })) {
+    const filename = path.join(directory, entry.name);
+    if (entry.isDirectory()) checkCharacters(filename);
+    else if (/\.(?:tsx?|jsx?|mjs|css|json|svg|html|txt|xml)$/.test(entry.name)) {
+      const source = readFileSync(filename, "utf8");
+      assert.ok(!prohibitedCharacters.test(source), `${filename}: prohibited emoji character`);
+      if (entry.name.endsWith(".json")) {
+        assert.ok(!prohibitedCharacters.test(JSON.stringify(JSON.parse(source))), `${filename}: escaped emoji character`);
+      }
+    }
+  }
+}
+for (const directory of ["app", "components", "data", "lib", "public", "out"])
+  checkCharacters(directory);
 const tools = JSON.parse(readFileSync("data/tools.json", "utf8"));
 const categories = JSON.parse(readFileSync("data/categories.json", "utf8"));
 const expectedCategories = [
@@ -105,7 +127,6 @@ for (const route of routes) {
     assert.ok(existsSync(target), `${route}: broken local link ${href}`);
   }
 }
-const home = readFileSync("out/index.html", "utf8");
 const jsonLdText = home.match(
   /<script type="application\/ld\+json">([^<]+)<\/script>/,
 )?.[1];

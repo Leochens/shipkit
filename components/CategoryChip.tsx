@@ -16,8 +16,8 @@ export default function CategoryChip({
       aria-current={active ? "page" : undefined}
       className={`category-link ${active ? "category-active" : ""}`}
     >
-      <Icon name={category.icon} className="!h-[17px] !w-[17px]" />
-      <span className="flex-1">
+      <Icon name={category.slug} className="!h-[17px] !w-[17px]" />
+      <span className="min-w-0 flex-1">
         <span className="sm:hidden">{category.short_name}</span>
         <span className="hidden sm:inline">{category.name}</span>
       </span>

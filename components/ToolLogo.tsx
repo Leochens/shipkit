@@ -6,13 +6,13 @@ export default function ToolLogo({
   tool: Tool;
   large?: boolean;
 }) {
+  const initials = tool.name.split(/\s+/).slice(0, 2).map((word) => word[0]).join("");
   return (
     <span
       aria-hidden="true"
-      className={`tool-logo ${large ? "h-20 w-20 rounded-[20px] text-[38px]" : "h-12 w-12 rounded-xl text-[26px]"}`}
-      style={{ background: tool.logo_bg, color: tool.logo_color }}
+      className={`tool-logo ${large ? "h-16 w-16 rounded-lg text-2xl sm:h-20 sm:w-20 sm:text-3xl" : "h-10 w-10 rounded-md text-base"}`}
     >
-      {tool.logo_text}
+      {initials}
     </span>
   );
 }

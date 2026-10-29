@@ -47,14 +47,14 @@ export default function ToolDirectory({
     setShowAll(false);
   }
   return (
-    <section id="directory" className="scroll-mt-8">
+    <section id="directory" className="scroll-mt-24">
       <div className="mb-5 flex items-end justify-between gap-3">
         <div>
           <div className="mb-2 flex items-center gap-2">
-            <span className="h-1.5 w-1.5 rounded-full bg-brand" />
+            <span className="h-1.5 w-1.5 rounded-full bg-zinc-400" />
             <span className="eyebrow">THE DIRECTORY</span>
           </div>
-          <h2 className="text-[23px] font-bold tracking-tight">
+          <h2 className="text-[22px] font-semibold tracking-tight">
             {initialCategory ? "分类工具" : "最近收录"}{" "}
             <span className="ml-1 align-middle font-mono text-xs font-normal text-muted">
               / {String(filtered.length).padStart(2, "0")}
@@ -69,7 +69,7 @@ export default function ToolDirectory({
             id="sort-tools"
             value={sort}
             onChange={(e) => setSort(e.target.value)}
-            className="max-w-[112px] bg-transparent text-[11px] text-muted outline-none"
+            className="max-w-[112px] rounded bg-transparent text-[11px] text-muted"
           >
             <option value="recent">最新收录优先</option>
             <option value="name">名称 A–Z</option>
@@ -82,7 +82,7 @@ export default function ToolDirectory({
                 aria-label={mode === "grid" ? "网格视图" : "列表视图"}
                 aria-pressed={view === mode}
                 onClick={() => setView(mode)}
-                className={`rounded p-1.5 ${view === mode ? "bg-brand-light text-brand" : "text-muted"}`}
+                className={`rounded p-1.5 ${view === mode ? "bg-zinc-100 text-ink" : "text-muted"}`}
               >
                 <Icon name={mode} className="!h-3.5 !w-3.5" />
               </button>
@@ -94,7 +94,7 @@ export default function ToolDirectory({
         <div className="relative flex-1">
           <Icon
             name="search"
-            className="absolute left-3.5 top-3.5 !h-4 !w-4 text-[#89917e]"
+            className="absolute left-3.5 top-3.5 !h-4 !w-4 text-muted"
           />
           <label htmlFor="tool-search" className="sr-only">
             搜索工具、功能或关键词
@@ -116,7 +116,7 @@ export default function ToolDirectory({
             id="filter-pricing"
             value={pricing}
             onChange={(e) => setPricing(e.target.value)}
-            className="field w-auto flex-1 sm:max-w-[133px]"
+            className="field !w-auto flex-1 sm:max-w-[133px]"
           >
             <option value="all">所有价格</option>
             <option value="Free">Free · 免费</option>
@@ -132,7 +132,7 @@ export default function ToolDirectory({
                 id="filter-category"
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
-                className="field w-auto flex-1 sm:max-w-[147px]"
+                className="field !w-auto flex-1 sm:max-w-[147px]"
               >
                 <option value="">所有分类</option>
                 {categories.map((item) => (
@@ -161,7 +161,7 @@ export default function ToolDirectory({
           ))}
         </div>
       ) : (
-        <div className="rounded-xl border border-dashed border-line bg-white px-5 py-16 text-center">
+        <div className="rounded-lg border border-line bg-white px-5 py-16 text-center">
           <Icon name="search" className="mx-auto mb-4 text-muted" />
           <h3 className="font-semibold">暂时没有找到匹配工具</h3>
           <p className="mt-2 text-xs leading-6 text-muted">

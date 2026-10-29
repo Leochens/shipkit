@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Brand from "./Brand";
+import Icon from "./Icon";
 import { CONTACT_EMAIL } from "@/lib/site";
 export default function Footer() {
   return (
@@ -22,7 +23,9 @@ export default function Footer() {
             <Link href="/#categories">工具分类</Link>
             <Link href="/submit/">提交与赞助</Link>
             <Link href="/about/">关于我们</Link>
-            <a href={`mailto:${CONTACT_EMAIL}`}>联系 Ryan ↗</a>
+            <a href={`mailto:${CONTACT_EMAIL}`} className="inline-flex items-center gap-1">
+              联系 Ryan <Icon name="arrow" className="!h-3 !w-3" />
+            </a>
           </nav>
         </div>
         <div className="mt-9 flex flex-col justify-between gap-3 border-t border-line pt-6 text-[11px] text-muted sm:flex-row">
