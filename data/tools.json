@@ -1,0 +1,629 @@
+[
+  {
+    "name": "OpenRouter",
+    "slug": "openrouter",
+    "url": "https://openrouter.ai/",
+    "description_zh": "用统一接口调用多家模型，方便比较效果、切换模型与控制成本。",
+    "category": "llm-apis",
+    "pricing_hint": "按模型与 Token 用量计费，部分模型提供免费额度。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "API 聚合",
+      "多模型",
+      "Token"
+    ],
+    "featured": true,
+    "added_at": "2026-10-28",
+    "logo_bg": "#f0edff",
+    "logo_color": "#6b58a0",
+    "logo_text": "↗"
+  },
+  {
+    "name": "DeepSeek API",
+    "slug": "deepseek-api",
+    "url": "https://api-docs.deepseek.com/",
+    "description_zh": "提供对话与推理模型 API，适合为 AI 产品接入模型能力。",
+    "category": "llm-apis",
+    "pricing_hint": "按输入、输出 Token 用量计费。",
+    "pricing_tag": "Paid",
+    "tags": [
+      "推理模型",
+      "API",
+      "Token"
+    ],
+    "featured": false,
+    "added_at": "2026-10-25",
+    "logo_bg": "#eaf0ff",
+    "logo_color": "#4169df",
+    "logo_text": "≈"
+  },
+  {
+    "name": "Anthropic API",
+    "slug": "anthropic-api",
+    "url": "https://platform.claude.com/docs/",
+    "description_zh": "通过 Claude API 构建文本生成、推理和工具调用功能。",
+    "category": "llm-apis",
+    "pricing_hint": "按模型与 Token 用量计费。",
+    "pricing_tag": "Paid",
+    "tags": [
+      "Claude",
+      "推理",
+      "工具调用"
+    ],
+    "featured": false,
+    "added_at": "2026-10-12",
+    "logo_bg": "#f4ece3",
+    "logo_color": "#a46c48",
+    "logo_text": "A"
+  },
+  {
+    "name": "Stripe",
+    "slug": "stripe",
+    "url": "https://stripe.com/",
+    "description_zh": "为海外 SaaS 接入在线支付、订阅账单与用量计费。",
+    "category": "payments",
+    "pricing_hint": "按交易及所用服务收费，费率因地区而异。",
+    "pricing_tag": "Paid",
+    "tags": [
+      "全球收款",
+      "订阅",
+      "SaaS"
+    ],
+    "featured": true,
+    "added_at": "2026-10-27",
+    "logo_bg": "#eeebff",
+    "logo_color": "#635bff",
+    "logo_text": "S"
+  },
+  {
+    "name": "Lemon Squeezy",
+    "slug": "lemon-squeezy",
+    "url": "https://www.lemonsqueezy.com/",
+    "description_zh": "通过名义销售商模式销售软件和订阅，简化数字产品收款。",
+    "category": "payments",
+    "pricing_hint": "按交易收取平台费用，具体费率以官网为准。",
+    "pricing_tag": "Paid",
+    "tags": [
+      "MoR",
+      "数字产品",
+      "订阅"
+    ],
+    "featured": false,
+    "added_at": "2026-10-20",
+    "logo_bg": "#f6ecff",
+    "logo_color": "#7944c6",
+    "logo_text": "◒"
+  },
+  {
+    "name": "Polar",
+    "slug": "polar",
+    "url": "https://polar.sh/",
+    "description_zh": "为 AI 产品管理订阅、预付额度与按用量计费。",
+    "category": "payments",
+    "pricing_hint": "根据交易与使用服务收费，详见官网。",
+    "pricing_tag": "Paid",
+    "tags": [
+      "AI 计费",
+      "订阅",
+      "用量计费"
+    ],
+    "featured": false,
+    "added_at": "2026-10-29",
+    "logo_bg": "#eaf0f4",
+    "logo_color": "#243447",
+    "logo_text": "P"
+  },
+  {
+    "name": "Clerk",
+    "slug": "clerk",
+    "url": "https://clerk.com/",
+    "description_zh": "用现成的登录组件和用户管理功能，快速接入产品账号体系。",
+    "category": "auth",
+    "pricing_hint": "提供免费方案，进阶功能与更高用量付费。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "登录组件",
+      "用户管理",
+      "Next.js"
+    ],
+    "featured": false,
+    "added_at": "2026-10-21",
+    "logo_bg": "#f0edff",
+    "logo_color": "#6c47ff",
+    "logo_text": "C"
+  },
+  {
+    "name": "Auth0",
+    "slug": "auth0",
+    "url": "https://auth0.com/",
+    "description_zh": "为应用提供身份验证、社交登录和企业身份集成。",
+    "category": "auth",
+    "pricing_hint": "提供免费方案，按需求升级付费套餐。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "OAuth",
+      "SSO",
+      "身份验证"
+    ],
+    "featured": false,
+    "added_at": "2026-10-08",
+    "logo_bg": "#fff0e8",
+    "logo_color": "#d96327",
+    "logo_text": "✳"
+  },
+  {
+    "name": "Better Auth",
+    "slug": "better-auth",
+    "url": "https://www.better-auth.com/",
+    "description_zh": "在自己的应用中管理登录、会话和权限的 TypeScript 鉴权框架。",
+    "category": "auth",
+    "pricing_hint": "开源框架免费，自行承担托管等基础设施成本。",
+    "pricing_tag": "Free",
+    "tags": [
+      "开源",
+      "TypeScript",
+      "自托管"
+    ],
+    "featured": false,
+    "added_at": "2026-10-24",
+    "logo_bg": "#eeeeec",
+    "logo_color": "#292d28",
+    "logo_text": "B"
+  },
+  {
+    "name": "Vercel",
+    "slug": "vercel",
+    "url": "https://vercel.com/",
+    "description_zh": "部署 Next.js 和 Web 应用，通过预览与自动构建更快上线。",
+    "category": "hosting",
+    "pricing_hint": "提供 Hobby 方案，商用和团队需求需核对套餐条款。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "Next.js",
+      "部署",
+      "预览"
+    ],
+    "featured": true,
+    "added_at": "2026-10-26",
+    "logo_bg": "#efefed",
+    "logo_color": "#202923",
+    "logo_text": "▲"
+  },
+  {
+    "name": "Cloudflare",
+    "slug": "cloudflare",
+    "url": "https://www.cloudflare.com/",
+    "description_zh": "通过 CDN、Pages 和 Workers 把网站与应用部署到边缘。",
+    "category": "hosting",
+    "pricing_hint": "多项服务有免费额度，超额或高级功能付费。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "CDN",
+      "Workers",
+      "边缘计算"
+    ],
+    "featured": false,
+    "added_at": "2026-10-22",
+    "logo_bg": "#fff0df",
+    "logo_color": "#e68124",
+    "logo_text": "☁"
+  },
+  {
+    "name": "Railway",
+    "slug": "railway",
+    "url": "https://railway.com/",
+    "description_zh": "从代码仓库部署后端、数据库和服务，减少基础设施配置。",
+    "category": "hosting",
+    "pricing_hint": "按套餐及资源用量计费。",
+    "pricing_tag": "Paid",
+    "tags": [
+      "后端部署",
+      "容器",
+      "数据库"
+    ],
+    "featured": false,
+    "added_at": "2026-10-11",
+    "logo_bg": "#eee8f7",
+    "logo_color": "#76508b",
+    "logo_text": "R"
+  },
+  {
+    "name": "Fly.io",
+    "slug": "fly-io",
+    "url": "https://fly.io/",
+    "description_zh": "在多个地区运行应用和容器，让后端更靠近海外用户。",
+    "category": "hosting",
+    "pricing_hint": "按计算、存储和网络等资源用量计费。",
+    "pricing_tag": "Paid",
+    "tags": [
+      "容器",
+      "多区域",
+      "后端"
+    ],
+    "featured": false,
+    "added_at": "2026-10-09",
+    "logo_bg": "#f0eafe",
+    "logo_color": "#8154c9",
+    "logo_text": "F"
+  },
+  {
+    "name": "Supabase",
+    "slug": "supabase",
+    "url": "https://supabase.com/",
+    "description_zh": "用 Postgres、身份验证和对象存储快速搭建产品后端。",
+    "category": "databases",
+    "pricing_hint": "提供免费方案，生产项目可升级付费套餐。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "Postgres",
+      "开源",
+      "BaaS"
+    ],
+    "featured": false,
+    "added_at": "2026-10-23",
+    "logo_bg": "#e8f5ee",
+    "logo_color": "#29956b",
+    "logo_text": "ϟ"
+  },
+  {
+    "name": "Neon",
+    "slug": "neon",
+    "url": "https://neon.com/",
+    "description_zh": "使用支持分支和弹性计算的 Serverless Postgres 数据库。",
+    "category": "databases",
+    "pricing_hint": "提供免费额度，更高用量与功能按套餐计费。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "Postgres",
+      "Serverless",
+      "数据库分支"
+    ],
+    "featured": false,
+    "added_at": "2026-10-18",
+    "logo_bg": "#e4f8ef",
+    "logo_color": "#279a76",
+    "logo_text": "N"
+  },
+  {
+    "name": "Turso",
+    "slug": "turso",
+    "url": "https://turso.tech/",
+    "description_zh": "围绕 SQLite 构建应用数据层，适合轻量产品与边缘场景。",
+    "category": "databases",
+    "pricing_hint": "提供免费方案，按用量与功能升级。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "SQLite",
+      "边缘数据库",
+      "libSQL"
+    ],
+    "featured": false,
+    "added_at": "2026-10-16",
+    "logo_bg": "#e6f4ee",
+    "logo_color": "#308c6c",
+    "logo_text": "T"
+  },
+  {
+    "name": "Upstash",
+    "slug": "upstash",
+    "url": "https://upstash.com/",
+    "description_zh": "通过 Serverless Redis 和消息服务处理缓存、限流与异步任务。",
+    "category": "databases",
+    "pricing_hint": "提供免费额度，付费方案按服务和用量计费。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "Redis",
+      "缓存",
+      "限流"
+    ],
+    "featured": false,
+    "added_at": "2026-10-14",
+    "logo_bg": "#e9f5e7",
+    "logo_color": "#427f35",
+    "logo_text": "U"
+  },
+  {
+    "name": "Resend",
+    "slug": "resend",
+    "url": "https://resend.com/",
+    "description_zh": "通过简洁的邮件 API 发送验证码、交易通知与产品邮件。",
+    "category": "email",
+    "pricing_hint": "提供免费发送额度，更高用量需付费。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "邮件 API",
+      "事务邮件",
+      "开发者友好"
+    ],
+    "featured": false,
+    "added_at": "2026-10-29",
+    "logo_bg": "#eeeeeb",
+    "logo_color": "#202923",
+    "logo_text": "R"
+  },
+  {
+    "name": "Loops",
+    "slug": "loops",
+    "url": "https://loops.so/",
+    "description_zh": "为 SaaS 管理营销、生命周期和事务邮件，持续触达用户。",
+    "category": "email",
+    "pricing_hint": "提供免费方案，按联系人及功能升级。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "生命周期",
+      "营销邮件",
+      "SaaS"
+    ],
+    "featured": false,
+    "added_at": "2026-10-17",
+    "logo_bg": "#eaf0ff",
+    "logo_color": "#5b75d7",
+    "logo_text": "L"
+  },
+  {
+    "name": "PostHog",
+    "slug": "posthog",
+    "url": "https://posthog.com/",
+    "description_zh": "把产品分析、会话回放和功能实验放在一个工作流里。",
+    "category": "analytics",
+    "pricing_hint": "多项产品有免费额度，超额按用量付费。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "产品分析",
+      "会话回放",
+      "开源"
+    ],
+    "featured": false,
+    "added_at": "2026-10-28",
+    "logo_bg": "#fff0de",
+    "logo_color": "#bf7b29",
+    "logo_text": "P"
+  },
+  {
+    "name": "Plausible",
+    "slug": "plausible",
+    "url": "https://plausible.io/",
+    "description_zh": "用轻量、注重隐私的网站分析了解流量来源和页面表现。",
+    "category": "analytics",
+    "pricing_hint": "云服务订阅付费，也提供自托管版本。",
+    "pricing_tag": "Paid",
+    "tags": [
+      "隐私友好",
+      "网站统计",
+      "轻量"
+    ],
+    "featured": false,
+    "added_at": "2026-10-15",
+    "logo_bg": "#edf0ff",
+    "logo_color": "#5c68c7",
+    "logo_text": "P"
+  },
+  {
+    "name": "Langfuse",
+    "slug": "langfuse",
+    "url": "https://langfuse.com/",
+    "description_zh": "追踪 LLM 调用、提示词与评估，观察 AI 产品的质量和成本。",
+    "category": "analytics",
+    "pricing_hint": "提供开源自托管及云端免费、付费方案。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "LLM 观测",
+      "Tracing",
+      "开源"
+    ],
+    "featured": false,
+    "added_at": "2026-10-19",
+    "logo_bg": "#f4eddf",
+    "logo_color": "#ae7f29",
+    "logo_text": "L"
+  },
+  {
+    "name": "Ahrefs",
+    "slug": "ahrefs",
+    "url": "https://ahrefs.com/",
+    "description_zh": "研究关键词、分析外链与检查网站，规划海外自然搜索增长。",
+    "category": "seo-distribution",
+    "pricing_hint": "提供部分免费工具，完整功能需订阅。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "关键词",
+      "SEO",
+      "外链"
+    ],
+    "featured": false,
+    "added_at": "2026-10-13",
+    "logo_bg": "#fff0e7",
+    "logo_color": "#e47636",
+    "logo_text": "a"
+  },
+  {
+    "name": "Google Search Console",
+    "slug": "google-search-console",
+    "url": "https://search.google.com/search-console/about",
+    "description_zh": "查看 Google 搜索表现、索引状态和网站收录问题。",
+    "category": "seo-distribution",
+    "pricing_hint": "免费使用，需验证网站所有权。",
+    "pricing_tag": "Free",
+    "tags": [
+      "Google",
+      "搜索表现",
+      "索引"
+    ],
+    "featured": false,
+    "added_at": "2026-10-07",
+    "logo_bg": "#eaf1ff",
+    "logo_color": "#4a78c5",
+    "logo_text": "G"
+  },
+  {
+    "name": "Crowdin",
+    "slug": "crowdin",
+    "url": "https://crowdin.com/",
+    "description_zh": "集中管理产品与文档翻译，把本地化接入开发流程。",
+    "category": "localization",
+    "pricing_hint": "提供免费及付费方案，适用范围以官网为准。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "翻译管理",
+      "多语言",
+      "协作"
+    ],
+    "featured": false,
+    "added_at": "2026-10-10",
+    "logo_bg": "#eaf5ef",
+    "logo_color": "#358a63",
+    "logo_text": "C"
+  },
+  {
+    "name": "Lokalise",
+    "slug": "lokalise",
+    "url": "https://lokalise.com/",
+    "description_zh": "协同管理应用、网站和营销内容的多语言翻译。",
+    "category": "localization",
+    "pricing_hint": "付费订阅，具体方案与试用以官网为准。",
+    "pricing_tag": "Paid",
+    "tags": [
+      "本地化",
+      "翻译协作",
+      "i18n"
+    ],
+    "featured": false,
+    "added_at": "2026-10-06",
+    "logo_bg": "#f1edff",
+    "logo_color": "#8060be",
+    "logo_text": "L"
+  },
+  {
+    "name": "Framer",
+    "slug": "framer",
+    "url": "https://www.framer.com/",
+    "description_zh": "用可视化设计工具制作、发布和维护产品营销网站。",
+    "category": "design",
+    "pricing_hint": "提供免费建站，独立域名等功能需付费。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "落地页",
+      "可视化建站",
+      "CMS"
+    ],
+    "featured": false,
+    "added_at": "2026-10-21",
+    "logo_bg": "#eeeefe",
+    "logo_color": "#6255cf",
+    "logo_text": "F"
+  },
+  {
+    "name": "Webflow",
+    "slug": "webflow",
+    "url": "https://webflow.com/",
+    "description_zh": "通过可视化开发与 CMS 搭建可定制的产品官网。",
+    "category": "design",
+    "pricing_hint": "提供免费入门方案，网站发布等需求需付费。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "可视化开发",
+      "CMS",
+      "营销网站"
+    ],
+    "featured": false,
+    "added_at": "2026-10-05",
+    "logo_bg": "#eaf0ff",
+    "logo_color": "#3569dd",
+    "logo_text": "W"
+  },
+  {
+    "name": "Termly",
+    "slug": "termly",
+    "url": "https://termly.io/",
+    "description_zh": "使用政策生成与同意管理工具，准备网站隐私与 Cookie 页面。",
+    "category": "legal",
+    "pricing_hint": "提供有限免费功能，更多政策和功能需付费。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "隐私政策",
+      "Cookie",
+      "同意管理"
+    ],
+    "featured": false,
+    "added_at": "2026-10-04",
+    "logo_bg": "#e7f2f8",
+    "logo_color": "#367899",
+    "logo_text": "T"
+  },
+  {
+    "name": "iubenda",
+    "slug": "iubenda",
+    "url": "https://www.iubenda.com/",
+    "description_zh": "管理隐私政策、网站条款与 Cookie 同意配置。",
+    "category": "legal",
+    "pricing_hint": "按产品组合和网站需求选择付费方案。",
+    "pricing_tag": "Paid",
+    "tags": [
+      "隐私政策",
+      "服务条款",
+      "Cookie"
+    ],
+    "featured": false,
+    "added_at": "2026-10-03",
+    "logo_bg": "#e8f3e7",
+    "logo_color": "#4b884b",
+    "logo_text": "i"
+  },
+  {
+    "name": "Cursor",
+    "slug": "cursor",
+    "url": "https://cursor.com/",
+    "description_zh": "在代码编辑器里使用 AI 与 Agent 辅助编写、理解和修改产品代码。",
+    "category": "agent-tools",
+    "pricing_hint": "提供免费方案，更高模型用量需订阅。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "AI 编程",
+      "Agent",
+      "编辑器"
+    ],
+    "featured": false,
+    "added_at": "2026-10-25",
+    "logo_bg": "#eeefec",
+    "logo_color": "#363e37",
+    "logo_text": "C"
+  },
+  {
+    "name": "MCP Registry",
+    "slug": "mcp-registry",
+    "url": "https://registry.modelcontextprotocol.io/",
+    "description_zh": "查找 MCP 服务，把外部数据与工具接入 AI 应用和 Agent。",
+    "category": "agent-tools",
+    "pricing_hint": "公开目录免费，具体 MCP 服务可能另行收费。",
+    "pricing_tag": "Free",
+    "tags": [
+      "MCP",
+      "工具连接",
+      "开放协议"
+    ],
+    "featured": false,
+    "added_at": "2026-10-27",
+    "logo_bg": "#f0eeea",
+    "logo_color": "#49413a",
+    "logo_text": "M"
+  },
+  {
+    "name": "Cline",
+    "slug": "cline",
+    "url": "https://cline.bot/",
+    "description_zh": "在编辑器中使用开源 AI 编程助手，连接模型并执行开发任务。",
+    "category": "agent-tools",
+    "pricing_hint": "扩展开源免费，模型 API 与外部服务可能收费。",
+    "pricing_tag": "Free",
+    "tags": [
+      "开源",
+      "AI 编程",
+      "MCP"
+    ],
+    "featured": false,
+    "added_at": "2026-10-02",
+    "logo_bg": "#f0eeff",
+    "logo_color": "#7060aa",
+    "logo_text": "C"
+  }
+]

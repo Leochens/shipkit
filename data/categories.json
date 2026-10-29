@@ -1,0 +1,14 @@
+[
+  {"slug":"llm-apis","name":"大模型 API / Token","short_name":"模型 API","english":"LLM APIs & Token Providers","description":"找到适合产品的大模型接口，在效果、延迟和 Token 成本之间做好取舍。","icon":"sparkles"},
+  {"slug":"payments","name":"收款与订阅","short_name":"收款订阅","english":"Global Payments & SaaS Billing","description":"从第一笔海外收入到订阅续费，找到适合你的收款与计费方案。","icon":"card"},
+  {"slug":"auth","name":"登录与账号","short_name":"登录鉴权","english":"Authentication & User Management","description":"快速接入登录、账号和权限管理，把时间留给产品核心体验。","icon":"key"},
+  {"slug":"hosting","name":"托管与边缘","short_name":"托管部署","english":"Hosting & Edge Deployment","description":"让海外用户更快打开你的产品，轻松部署前端、后端与边缘服务。","icon":"cloud"},
+  {"slug":"databases","name":"数据库与存储","short_name":"数据库","english":"Serverless Databases & Storage","description":"从 MVP 到正式产品，为用户数据、文件和缓存找到合适的家。","icon":"database"},
+  {"slug":"email","name":"邮件与触达","short_name":"邮件触达","english":"Transactional Email & Lifecycle Marketing","description":"发好每一封验证邮件、产品更新和召回邮件，和用户保持联系。","icon":"mail"},
+  {"slug":"analytics","name":"分析与观测","short_name":"分析观测","english":"Product Analytics & LLM Observability","description":"看懂用户从哪里来、在哪一步离开，以及每次模型调用的表现。","icon":"chart"},
+  {"slug":"seo-distribution","name":"SEO 与分发","short_name":"SEO 分发","english":"SEO & Product Distribution","description":"找到搜索需求、改善页面表现，让第一批海外用户发现你的产品。","icon":"globe"},
+  {"slug":"localization","name":"本地化与多语言","short_name":"多语言","english":"Localization & Translation Management","description":"管理产品文案和翻译，让不同语言的用户都能顺畅上手。","icon":"languages"},
+  {"slug":"design","name":"落地页与设计","short_name":"落地页设计","english":"Landing Page Design & Website Builders","description":"把产品价值讲清楚，更快做出能上线、能转化的英文落地页。","icon":"layout"},
+  {"slug":"legal","name":"合规与协议","short_name":"合规协议","english":"Privacy Policies & Consent Management","description":"了解隐私政策、服务条款和 Cookie 同意工具，为上线做好准备。","icon":"shield"},
+  {"slug":"agent-tools","name":"Agent / MCP / Skills","short_name":"Agent 工具","english":"AI Agent Tools, MCP & Skills","description":"连接模型、代码和外部工具，把重复工作交给你的开发助手。","icon":"terminal"}
+]
