@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://leochens.github.io/shipkit
+Sitemap: https://leochens.github.io/shipkit/sitemap.xml
