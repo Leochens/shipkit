@@ -1,6 +1,6 @@
 # ShipKit
 
-给独立开发者的 AI 产品出海工具目录。Chinese editorial copy, English tool names, 33 real tools across 12 shipping categories. Built with Next.js App Router, TypeScript and Tailwind CSS v3; no UI kit, database or server runtime.
+给独立开发者的 AI 产品出海工具目录。Chinese editorial copy, English tool names, 34 real tools across 12 shipping categories. Built with Next.js App Router, TypeScript and Tailwind CSS v3; no UI kit, database or server runtime.
 
 ## Run
 
@@ -43,7 +43,7 @@ Configure the host to serve `/route/index.html` for `/route/` and use `404.html`
 
 - `/` — introduction, 3 editorial picks, category navigation, searchable and filterable directory, grid/list views, name/date sorting, newsletter demo, submission CTA.
 - `/category/[slug]/` — 12 category pages with precise Chinese / English niche titles and filtered tool lists.
-- `/tools/[slug]/` — 33 tool pages with official links, a one-line description, pricing type, pricing context, tags and related tools.
+- `/tools/[slug]/` — 34 tool pages with official links, a one-line description, pricing type, pricing context, tags and related tools.
 - `/submit/` — free submissions, sponsorship pricing and a validated mailto submission form.
 - `/about/` — purpose, curation standards, sponsorship transparency and contact.
 - `/robots.txt`, `/sitemap.xml`, `/404.html` — static crawler and error assets.
