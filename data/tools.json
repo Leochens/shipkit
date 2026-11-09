@@ -625,5 +625,100 @@
     "logo_bg": "#f0eeff",
     "logo_color": "#7060aa",
     "logo_text": "C"
+  },
+  {
+    "name": "LiteLLM",
+    "slug": "litellm",
+    "url": "https://www.litellm.ai/",
+    "description_zh": "用一套兼容 OpenAI 的接口统一接入多家模型，并做支出限额、路由与自托管网关。",
+    "category": "llm-apis",
+    "pricing_hint": "开源可免费自托管，企业版与托管服务需另行付费。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "LLM 网关",
+      "开源",
+      "支出控制"
+    ],
+    "featured": false,
+    "added_at": "2026-11-09",
+    "logo_bg": "#eaf2ff",
+    "logo_color": "#3d6fd8",
+    "logo_text": "L"
+  },
+  {
+    "name": "Firecrawl",
+    "slug": "firecrawl",
+    "url": "https://www.firecrawl.dev/",
+    "description_zh": "提供网页搜索、抓取和站点爬取 API，把页面转成 Agent 可用的 Markdown 或 JSON。",
+    "category": "agent-tools",
+    "pricing_hint": "每月提供免费额度，超出后按积分套餐计费。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "网页抓取",
+      "搜索",
+      "Agent"
+    ],
+    "featured": false,
+    "added_at": "2026-11-09",
+    "logo_bg": "#f6eee8",
+    "logo_color": "#b25a32",
+    "logo_text": "F"
+  },
+  {
+    "name": "E2B",
+    "slug": "e2b",
+    "url": "https://e2b.dev/",
+    "description_zh": "为 AI Agent 提供隔离的微型虚拟机沙箱，让它安全地运行代码和命令。",
+    "category": "agent-tools",
+    "pricing_hint": "提供免费 Hobby 额度，随后按沙箱运行时长计费。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "沙箱",
+      "代码执行",
+      "Agent"
+    ],
+    "featured": false,
+    "added_at": "2026-11-09",
+    "logo_bg": "#e8f5ee",
+    "logo_color": "#2a7a4f",
+    "logo_text": "E"
+  },
+  {
+    "name": "Browserbase",
+    "slug": "browserbase",
+    "url": "https://www.browserbase.com/",
+    "description_zh": "提供云端浏览器服务，让 Agent 像人一样打开网页、操作页面并完成任务。",
+    "category": "agent-tools",
+    "pricing_hint": "提供免费入门额度，更高并发与时长需付费。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "云浏览器",
+      "Agent",
+      "自动化"
+    ],
+    "featured": false,
+    "added_at": "2026-11-09",
+    "logo_bg": "#eeeaff",
+    "logo_color": "#4a3db8",
+    "logo_text": "B"
+  },
+  {
+    "name": "Together AI",
+    "slug": "together-ai",
+    "url": "https://www.together.ai/",
+    "description_zh": "托管开源大模型推理接口，方便独立产品接入多种开源模型。",
+    "category": "llm-apis",
+    "pricing_hint": "按模型与 Token 用量计费，部分模型提供免费额度。",
+    "pricing_tag": "Freemium",
+    "tags": [
+      "开源模型",
+      "推理",
+      "API"
+    ],
+    "featured": false,
+    "added_at": "2026-11-09",
+    "logo_bg": "#ececff",
+    "logo_color": "#3b3bb8",
+    "logo_text": "T"
   }
 ]
